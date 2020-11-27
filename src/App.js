@@ -22,16 +22,17 @@ function App() {
     color: 'white'
   }
   let currentTime = new Date().getHours();
+  console.log(currentTime);
   let message, img;
-  if (currentTime >= 4 && currentTime <= 11) {
+  if (currentTime >= 4 && currentTime <= 12) {
     message = 'Morning'
     img = morning
   }
-  else if (currentTime >= 12 && currentTime <= 16) {
+  else if (currentTime >= 1 && currentTime <= 16) {
     message = 'Afternoon';
     img = afternoon
   }
-  else if ((currentTime >= 17 && currentTime <= 20)) {
+  else if ((currentTime >= 16 && currentTime <= 21)) {
     message = 'Evening';
     img = evening
   }
